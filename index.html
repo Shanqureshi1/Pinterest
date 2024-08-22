@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest Website</title>
+</head>
+<style>
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: rgba(128, 128, 128, 0.611);
+}
+
+    /* *{
+        border: 2px solid green;
+        
+    } */
+
+    .main {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+
+    }
+
+    .div1 {
+        height: 25px;
+        margin-top: 6px;
+        font-size: 25px;
+        color: rgb(181, 1, 1);
+        margin-right: 40px;
+
+    }
+
+    #imgp {
+        width: 40px;
+        margin-left: 50px;
+        border-radius: 0px 35px 0px 35px;
+        box-shadow: 1px 1px 10px rgb(181, 1, 1) ;
+
+    }
+
+    #btn1 {
+        height: 40px;
+        width: 100px;
+        border-radius: 25px;
+        border: none;
+        color: white;
+        background-color: black;
+        cursor: pointer;
+        font-size: 17px;
+    }
+
+    #btn1:hover {
+        outline: 3px solid  rgb(142, 2, 2);
+    }
+
+    #btn2 {
+        height: 40px;
+        width: 80px;
+        border-radius: 25px;
+        border: none;
+        color: black;
+        font-size: 17px;
+    }
+
+    #btn2:hover {
+        color: black;
+        background-color: gainsboro;
+        cursor: pointer;
+        outline: 3px solid rgb(142, 2, 2);
+    }
+
+    #btn3 {
+        height: 40px;
+        width: 100px;
+        border-radius: 25px;
+        border: none;
+        color: white;
+        background-color: rgb(181, 1, 1);
+        font-size: 17px;
+        margin-right: 40px;
+    }
+
+    #btn3:hover {
+        color: white;
+        background-color: rgb(142, 2, 2);
+        cursor: pointer;
+        outline: 3px solid black;
+    }
+
+    .div2>input {
+        height: 35px;
+        border: none;
+        outline: none;
+        border-bottom: 3px solid rgb(181, 1, 1);
+        background-color: transparent;
+
+
+    }
+
+
+    h1 {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .main2 {
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    img:hover {
+        cursor: pointer;
+        filter: blur(1px);
+        border-radius: 0px 35px 0px 35px;
+        box-shadow: 1px 1px 10px rgb(181, 1, 1) ;
+    }
+
+    .img3 {
+        height: 400px;
+        width: 272px;
+        border-radius: 35px 0px 35px 0px;
+        margin-bottom: 10px;
+        position: relative;
+    }
+
+    .img4 {
+        height: 250px;
+        width: 272px;
+        border-radius: 35px 0px 35px 0px;
+        margin-bottom: 10px;
+    }
+
+    .img5 {
+        height: 350px;
+        width: 272px;
+        border-radius: 35px 0px 35px 0px;
+        margin-bottom: 10px;
+    }
+
+    .img6 {
+        height: 300px;
+        width: 272px;
+        border-radius: 35px 0px 35px 0px;
+        margin-bottom: 10px;
+    }
+
+    .main3 {
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+
+    }
+
+    .main4 {
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+
+    }
+
+    .main5 {
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+
+    }
+
+    .main6 {
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+
+    }
+
+    .img7 {
+        height: 250px;
+        width: 272px;
+        border-radius: 35px 0px 35px 0px;
+        margin-bottom: 10px;
+    }
+
+    .img8 {
+        height: 350px;
+        width: 272px;
+        border-radius: 35px 0px 35px 0px;
+        margin-bottom: 10px;
+    }
+
+    .img9 {
+        height: 500px;
+        width: 272px;
+        border-radius: 35px 0px 35px 0px;
+        margin-bottom: 10px;
+    }
+
+    .img10 {
+        height: 200px;
+        width: 272px;
+        border-radius: 35px 0px 35px 0px;
+        margin-bottom: 10px;
+    }
+
+    .img11 {
+        height: 400px;
+        width: 272px;
+        border-radius: 35px 0px 35px 0px;
+        margin-bottom: 10px;
+    }
+
+    .img12 {
+        height: 250px;
+        width: 272px;
+        border-radius: 35px 0px 35px 0px;
+        margin-bottom: 10px;
+    }
+
+    .img13 {
+        height: 350px;
+        width: 272px;
+        border-radius: 35px 0px 35px 0px;
+        margin-bottom: 10px;
+    }
+
+    .img14 {
+        height: 300px;
+        width: 272px;
+        border-radius: 35px 0px 35px 0px;
+        margin-bottom: 10px;
+    }
+
+    .img15 {
+        height: 250px;
+        width: 272px;
+        border-radius: 35px 0px 35px 0px;
+        margin-bottom: 10px;
+    }
+
+    .img16 {
+        height: 350px;
+        width: 272px;
+        border-radius: 35px 0px 35px 0px;
+        margin-bottom: 10px;
+    }
+
+    .img17 {
+        height: 500px;
+        width: 272px;
+        border-radius: 35px 0px 35px 0px;
+        margin-bottom: 10px;
+    }
+
+    .img18 {
+        height: 200px;
+        width: 272px;
+        border-radius: 35px 0px 35px 0px;
+        margin-bottom: 10px;
+    }
+
+    .img19 {
+        height: 400px;
+        width: 272px;
+        border-radius: 35px 0px 35px 0px;
+        margin-bottom: 10px;
+    }
+
+    .img20 {
+        height: 250px;
+        width: 272px;
+        border-radius: 35px 0px 35px 0px;
+        margin-bottom: 10px;
+    }
+
+    .img21 {
+        height: 350px;
+        width: 272px;
+        border-radius: 35px 0px 35px 0px;
+        margin-bottom: 10px;
+    }
+
+    .img22 {
+        height: 300px;
+        width: 272px;
+        border-radius: 35px 0px 35px 0px;
+        margin-bottom: 10px;
+    }
+
+
+
+    .gmain {
+        display: flex;
+        justify-content: center;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <img id="imgp" src="img/pinterest png.png" alt="">
+        <div class="div1">Pintrest</div>
+        <button id="btn1">Epxlore</button>
+        <div class="div2"><input type="text" size="130px" placeholder="Search"></div>
+        <button id="btn2">Login in</button>
+        <button id="btn3">Sign up</button>
+    </div>
+
+    <h1>Explore populer ideas</h1>
+    <div class="gmain">
+        <div class="main2">
+            <img class="img19" src="img/photo-1724036150083-477ae532c587.avif" alt="">
+            <!-- <p>Lorem, ipsum dolor sit amet consectetur <br>
+                 adipisicing elit. Corporis at <br>
+                  exercitationem, neque cum <br>
+                voluptatum sed vero nemo! <br>
+                 Non, quibusdam accusantium!</p> -->
+            <img class="img20" src="img/photo-1724098035045-bed5b03fa7d0.avif" alt="">
+            <img class="img21" src="img/photo-1724094505377-ac01c7813010.avif" alt="">
+            <img class="img22" src="img/premium_photo-1686090450479-370d5ddf4de1.avif" alt="">
+        </div>
+        <div class="main3">
+            <img class="img15" src="img/premium_photo-1686090450479-370d5ddf4de1.avif" alt="">
+            <img class="img16" src="img/photo-1724094505377-ac01c7813010.avif" alt="">
+            <img class="img17" src="img/photo-1724098035045-bed5b03fa7d0.avif" alt="">
+            <img class="img18" src="img/photo-1724036150083-477ae532c587.avif" alt="">
+        </div>
+        <div class="main4">
+            <img class="img19" src="img/photo-1724036150083-477ae532c587.avif" alt="">
+            <img class="img20" src="img/photo-1724098035045-bed5b03fa7d0.avif" alt="">
+            <img class="img21" src="img/photo-1724094505377-ac01c7813010.avif" alt="">
+            <img class="img22" src="img/premium_photo-1686090450479-370d5ddf4de1.avif" alt="">
+        </div>
+        <div class="main5">
+            <img class="img15" src="img/premium_photo-1686090450479-370d5ddf4de1.avif" alt="">
+            <img class="img16" src="img/photo-1724094505377-ac01c7813010.avif" alt="">
+            <img class="img17" src="img/photo-1724098035045-bed5b03fa7d0.avif" alt="">
+            <img class="img18" src="img/photo-1724036150083-477ae532c587.avif" alt="">
+        </div>
+        <div class="main6">
+            <img class="img19" src="img/photo-1724036150083-477ae532c587.avif" alt="">
+            <img class="img20" src="img/photo-1724098035045-bed5b03fa7d0.avif" alt="">
+            <img class="img21" src="img/photo-1724094505377-ac01c7813010.avif" alt="">
+            <img class="img22" src="img/premium_photo-1686090450479-370d5ddf4de1.avif" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
